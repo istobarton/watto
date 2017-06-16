@@ -7,8 +7,8 @@ describe('watto App', () => {
     page = new WattoPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display hello watto', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
+    expect(page.getParagraphText()).toEqual('Hello, Watto!');
   });
 });

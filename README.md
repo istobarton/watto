@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## To Do
 TODO for MVP: 
-* Infrastructure with Hello World Setup
+* ~~Infrastructure with Hello World Setup~~
 * Replace Hello World with API Call
 * Develop routing shifting
 * " with API endpoints
