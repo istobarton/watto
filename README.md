@@ -26,3 +26,21 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+## To Do
+TODO for MVP: 
+* Infrastructure with Hello World Setup
+* Replace Hello World with API Call
+* Develop routing shifting
+* " with API endpoints
+* ngFor list-view spaceships
+* determine images for list-view (google images? alt source?)
+* determine images, information for detail-view
+
+Styling Notes: 
+* List View
+** to grow with development....
+* Detail View
+** to grow with development....
+
