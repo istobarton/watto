@@ -33,7 +33,8 @@ TODO for MVP:
 * ~~Infrastructure with Hello World Setup~~
 * ~~Build Spaceship Service~~
 * ~~Adjust Base URL~~
-* Replace Hello World with API Call
+* ~~Replace Hello World with API Call~~
+* Set selected starship on click
 * Develop routing shifting
 * " with API endpoints
 * ngFor list-view spaceships
@@ -45,4 +46,7 @@ Styling Notes:
 ** to grow with development....
 * Detail View
 ** to grow with development....
+
+## Bugs/Improvements
+* Improve Promise Testing
 

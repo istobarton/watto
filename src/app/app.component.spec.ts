@@ -1,13 +1,14 @@
 import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
+import { AppModule } from './app.module';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
+      imports: [
+        AppModule
+      ]
     }).compileComponents();
   }));
 
@@ -17,7 +18,7 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   }));
 
-  it(`should have as name 'Watto'`, async(() => {
+  it(`should have name 'Watto'`, async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
     expect(app.name).toEqual('Watto');
@@ -29,4 +30,19 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('h1').textContent).toContain('Hello, Watto!');
   }));
+
+  it(`should hold a list of spaceships`, async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.spaceships).toBeTruthy();
+  }));
+
+
+  it('should render a list regardless of promise', async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    fixture.detectChanges();
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('ul')).toBeTruthy();
+  }));
+
 });

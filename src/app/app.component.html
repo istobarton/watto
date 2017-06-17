@@ -3,4 +3,20 @@
     Hello, {{name}}!
   </h1>
 </div>
+<ul>
+  <li *ngFor="let spaceship of spaceships">
+    <div>{{spaceship?.name}}</div>
+    <div>{{spaceship?.manufacturer}}</div>
+    <div>{{spaceship?.class}}</div>
+    <div>{{spaceship?.techspecs?.length}}</div>
+    <div>{{spaceship?.techspecs?.maxaccel}}</div>
+    <div>{{spaceship?.techspecs?.MGLT}}</div>
+    <div>{{spaceship?.techspecs?.maxatmosphericspeeded}}</div>
+    <div>{{spaceship?.techspecs?.hull}}</div>
+    <div>{{spaceship?.techspecs?.sensor}}</div>
+    <div>{{spaceship?.techspecs?.targeting}}</div>
+    <div>{{spaceship?.techspecs?.argmament}}</div>
+    <div>{{spaceship?.techspecs?.communications}}</div>
+  </li>
+</ul>
 
