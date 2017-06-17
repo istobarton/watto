@@ -49,4 +49,5 @@ Styling Notes:
 
 ## Bugs/Improvements
 * Improve Promise Testing
+* Redux State
 

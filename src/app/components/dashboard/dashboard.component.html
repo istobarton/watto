@@ -1,0 +1,15 @@
+<p>
+  dashboard works!
+</p>
+
+List of Spaceships:
+<ul>
+  <li
+    *ngFor="let spaceship of spaceships"
+    (click)="selectSpaceship(spaceship)"
+  >
+    <div>
+      <a routerLink="/spaceship" routerLinkActive="active">{{spaceship?.name}}</a>
+    </div>
+  </li>
+</ul>

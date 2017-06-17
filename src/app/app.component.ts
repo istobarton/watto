@@ -8,21 +8,9 @@ import { Spaceship } from './models/spaceship';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
-  public spaceships: Spaceship[] = [];
-  public selectedSpaceship: Spaceship;
+export class AppComponent {
+
   public name = 'Watto';
 
-  constructor(
-    private spaceshipService: SpaceshipService
-  ) { }
-
-  ngOnInit(): void {
-    this.spaceshipService.getSpaceships()
-      .then(spaceships => this.spaceships = spaceships);
-  }
-
-  public selectSpaceship(spaceship) {
-    this.selectedSpaceship = spaceship;
-  }
+  constructor() { }
 }
