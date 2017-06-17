@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 TODO for MVP: 
 * ~~Infrastructure with Hello World Setup~~
 * ~~Build Spaceship Service~~
-* Adjust Base URL
+* ~~Adjust Base URL~~
 * Replace Hello World with API Call
 * Develop routing shifting
 * " with API endpoints

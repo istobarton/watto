@@ -1,10 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule }    from '@angular/http';
-
+import { HttpModule, RequestOptions }    from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SpaceshipService } from './services/spaceship.service';
+import { CustomRequestOptions } from './options/custom-request.options';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,13 @@ import { SpaceshipService } from './services/spaceship.service';
     BrowserModule,
     HttpModule
   ],
-  providers: [SpaceshipService],
+  providers: [
+    {
+      provide: RequestOptions,
+      useClass: CustomRequestOptions
+    },
+    SpaceshipService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
