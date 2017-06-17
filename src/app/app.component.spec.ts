@@ -2,6 +2,7 @@ import { TestBed, async } from '@angular/core/testing';
 
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
+import { Spaceship } from './models/spaceship';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -37,12 +38,17 @@ describe('AppComponent', () => {
     expect(app.spaceships).toBeTruthy();
   }));
 
-
   it('should render a list regardless of promise', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('ul')).toBeTruthy();
+  }));
+
+  it(`should have a selectedSpaceships property`, async(() => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const app = fixture.debugElement.componentInstance;
+    expect(app.selectedSpaceship).toEqual(undefined);
   }));
 
 });

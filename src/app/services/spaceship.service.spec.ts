@@ -2,7 +2,6 @@ import { TestBed, inject } from '@angular/core/testing';
 
 import { SpaceshipService } from './spaceship.service';
 import { HttpModule } from '@angular/http';
-import { Spaceship } from '../models/spaceship';
 
 describe('SpaceshipService', () => {
   beforeEach(() => {

@@ -10,6 +10,7 @@ import { Spaceship } from './models/spaceship';
 
 export class AppComponent implements OnInit {
   public spaceships: Spaceship[] = [];
+  public selectedSpaceship: Spaceship;
   public name = 'Watto';
 
   constructor(
@@ -19,5 +20,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.spaceshipService.getSpaceships()
       .then(spaceships => this.spaceships = spaceships);
+  }
+
+  public selectSpaceship(spaceship) {
+    this.selectedSpaceship = spaceship;
   }
 }

@@ -34,7 +34,7 @@ TODO for MVP:
 * ~~Build Spaceship Service~~
 * ~~Adjust Base URL~~
 * ~~Replace Hello World with API Call~~
-* Set selected starship on click
+* ~~Set selected starship on click~~
 * Develop routing shifting
 * " with API endpoints
 * ngFor list-view spaceships
