@@ -8,6 +8,7 @@ import 'rxjs/add/operator/toPromise';
 export class SpaceshipService {
 
   public spaceshipUrl = 'spaceships';
+  public selectedSpaceship = Spaceship;
 
   constructor(public http: Http) { }
 
@@ -16,6 +17,10 @@ export class SpaceshipService {
       .toPromise()
       .then(response => response.json().products as Spaceship[])
       .catch(this.handleError);
+  }
+
+  public getSelectedShip() {
+    return this.selectedSpaceship;
   }
 
   public handleError(error: any): Promise<any> {

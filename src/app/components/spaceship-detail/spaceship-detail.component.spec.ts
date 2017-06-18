@@ -22,4 +22,10 @@ describe('SpaceshipDetailComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have a selectedSpaceship property`, async(() => {
+    const fixture = TestBed.createComponent(SpaceshipDetailComponent);
+    const comp = fixture.debugElement.componentInstance;
+    expect(comp.selectedSpaceship).toEqual(undefined);
+  }));
 });

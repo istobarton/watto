@@ -35,11 +35,12 @@ TODO for MVP:
 * ~~Adjust Base URL~~
 * ~~Replace Hello World with API Call~~
 * ~~Set selected starship on click~~
-* Develop routing shifting
-* " with API endpoints
-* ngFor list-view spaceships
+* ~~Develop routing shifting~~
+* ~~ngFor list-view spaceships~~
+* Fix tests with routing https://github.com/angular/angular/issues/11633
 * determine images for list-view (google images? alt source?)
 * determine images, information for detail-view
+* Style
 
 Styling Notes: 
 * List View
@@ -50,4 +51,7 @@ Styling Notes:
 ## Bugs/Improvements
 * Improve Promise Testing
 * Redux State
+
+## Would like
+* ID's for routing
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Spaceship } from '../../models/spaceship';
 import { SpaceshipService } from '../../services/spaceship.service';
 
@@ -7,21 +7,18 @@ import { SpaceshipService } from '../../services/spaceship.service';
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
   public spaceships: Spaceship[] = [];
-  public selectedSpaceship: Spaceship;
 
   constructor(
     private spaceshipService: SpaceshipService
-  ) { }
-
-  ngOnInit(): void {
-    console.log('oninit');
+  ) {
+    console.log('constructor');
     this.spaceshipService.getSpaceships()
       .then(spaceships => this.spaceships = spaceships);
   }
 
   public selectSpaceship(spaceship) {
-    this.selectedSpaceship = spaceship;
+    this.spaceshipService.selectedSpaceship = spaceship;
   }
 }
