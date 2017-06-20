@@ -41,6 +41,9 @@ TODO for MVP:
 * determine images for list-view (google images? alt source?)
 * determine images, information for detail-view
 * Style
+* Deploy
+* Check reqs
+* Update README
 
 Styling Notes: 
 * List View
