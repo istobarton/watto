@@ -1,15 +1,42 @@
-List of Spaceships:
-<ul>
-  <li
-    *ngFor="let spaceship of spaceships"
-  >
-    <div>
-      <img *ngIf="spaceship.imgUrl" src="/assets/images/spaceships/thumbs/{{spaceship?.imgUrl}}_thumb.jpg">
-      <a
-        routerLink="/spaceship"
-        routerLinkActive="active"
-        (click)="selectSpaceship(spaceship)"
-      >{{spaceship?.name}}</a>
-    </div>
-  </li>
-</ul>
+<div
+  class="row">
+
+  <div
+    class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+  </div>
+
+  <div
+    class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10">
+    <ul>
+      <li
+        *ngFor="let spaceship of spaceships"
+      >
+
+          <a
+            class="spaceship-anchor "
+            routerLink="/spaceship"
+            routerLinkActive="active"
+            (click)="selectSpaceship(spaceship)"
+          >
+            <div class="spaceship-listing row">
+              <img
+                class="col-lg-2 col-sm-12"
+                *ngIf="spaceship.imgUrl"
+                src="/assets/images/spaceships/thumbs/{{spaceship?.imgUrl}}_thumb.jpg">
+              <h1
+                class="spaceship-title col-lg-10 col-sm-12">
+                {{spaceship?.name}}
+              </h1>
+            </div>
+          </a>
+
+      </li>
+    </ul>
+  </div>
+
+
+  <div
+    class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+  </div>
+
+</div>

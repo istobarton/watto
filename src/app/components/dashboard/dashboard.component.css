@@ -1,0 +1,30 @@
+li {
+  list-style: none;
+  padding-bottom: 25px;
+}
+
+ul {
+  padding: 0px 0px 00px 0px;
+  margin: 0px 0px 0px 0px;
+}
+
+img {
+  /*max-height: 200px;*/
+  max-width: 500px;
+  border-radius: 50%;
+}
+
+.spaceship-listing {
+  background-color: grey;
+  border: 5px solid #d4b22f;
+  border-radius: 5px;
+}
+
+.spaceship-title {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.spaceship-anchor {
+  width: 100%;
+}

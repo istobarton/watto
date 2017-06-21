@@ -10,7 +10,6 @@ import { SpaceshipDetailComponent } from './components/spaceship-detail/spaceshi
 import { AppRoutingModule } from './app-routing.module';
 import { NgxGalleryModule } from 'ngx-gallery';
 
-
 @NgModule({
   declarations: [
     AppComponent,

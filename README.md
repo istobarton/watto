@@ -45,6 +45,7 @@ TODO for MVP:
 * Deploy
 * Check reqs
 * Update README
+* BUG with font breaking fontawesome
 
 Styling Notes: 
 * List View
@@ -57,4 +58,5 @@ Styling Notes:
 
 ## Would like
 * ID's for routing
+
 
