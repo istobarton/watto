@@ -21,12 +21,4 @@ export class DashboardComponent {
   public selectSpaceship(spaceship) {
     this.spaceshipService.selectedSpaceship = spaceship;
   }
-
-  public createImagePath() {
-    let spaceships = this.spaceships;
-
-    for (const index in spaceships){
-      this.spaceships[index]['imgUrl'] = spaceships[index].name.toLowerCase().replace(/ /g, '-');
-    }
-  }
 }

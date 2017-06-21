@@ -40,7 +40,7 @@ TODO for MVP:
 * Fix tests with routing https://github.com/angular/angular/issues/11633
 * ~~determine images for list-view (google images? alt source?)~~
 * ~~determine images, information for detail-view~~
-* Image rendering -- subscribe?
+* ~~Image rendering -- subscribe?~~
 * Style
 * Deploy
 * Check reqs
@@ -54,7 +54,6 @@ Styling Notes:
 
 ## Bugs/Improvements
 * Improve Promise Testing
-* Redux State
 
 ## Would like
 * ID's for routing
