@@ -1,3 +1,13 @@
+@font-face {
+  font-family: starWarsHollow;
+  src: url('../assets/fonts/star_jedi/starjedi/Starjedi.ttf') format('truetype');
+}
+
+body {
+  background-color: grey;
+}
+
 h1 {
-  color: blue;
+  color: #d4b22f;
+  font-family: starWarsHollow;
 }
