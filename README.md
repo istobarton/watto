@@ -41,22 +41,33 @@ TODO for MVP:
 * ~~determine images for list-view (google images? alt source?)~~
 * ~~determine images, information for detail-view~~
 * ~~Image rendering -- subscribe?~~
-* Style
-* Deploy
+* Style - in progress
 * Check reqs
 * Update README
-* BUG with font breaking fontawesome
 
 Styling Notes: 
 * List View
-** to grow with development....
+  * Dynamic sizing adjustments
+  * Listing styling
+  * Simple, don't overthink it
+  * header throughout -- resizable
+  * Font for header
+  * Styling for title
 * Detail View
-** to grow with development....
+  * Replace current galleria with bootstrap and remove dependency?
+  * 1/2 and 1/2 display
+  * make sure returning is easy
+  * "Buy Button"
 
-## Bugs/Improvements
+## Bugs
 * Improve Promise Testing
+* Font Awesome NOt Working?
 
-## Would like
+## Nice to Have
 * ID's for routing
+* Redux for State
+* ImgUrl from Server
+* Deploy
+
 
 
