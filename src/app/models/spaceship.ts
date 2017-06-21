@@ -1,4 +1,5 @@
 export class Spaceship {
+  imgUrl: string;
   name: string;
   manufacturer: string;
   class: string;

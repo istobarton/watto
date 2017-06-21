@@ -38,8 +38,9 @@ TODO for MVP:
 * ~~Develop routing shifting~~
 * ~~ngFor list-view spaceships~~
 * Fix tests with routing https://github.com/angular/angular/issues/11633
-* determine images for list-view (google images? alt source?)
-* determine images, information for detail-view
+* ~~determine images for list-view (google images? alt source?)~~
+* ~~determine images, information for detail-view~~
+* Image rendering -- subscribe?
 * Style
 * Deploy
 * Check reqs

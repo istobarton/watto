@@ -8,6 +8,8 @@ import { CustomRequestOptions } from './options/custom-request.options';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SpaceshipDetailComponent } from './components/spaceship-detail/spaceship-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NgxGalleryModule } from 'ngx-gallery';
+
 
 @NgModule({
   declarations: [
@@ -16,9 +18,10 @@ import { AppRoutingModule } from './app-routing.module';
     SpaceshipDetailComponent
   ],
   imports: [
+    NgxGalleryModule,
     BrowserModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     {
