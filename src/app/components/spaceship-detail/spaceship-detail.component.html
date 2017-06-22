@@ -10,10 +10,10 @@
         class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
       </div>
 
-      <!--Galleria-->
+      <!--Galleria & Buttons-->
       <div class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10 card image-panel">
-        <!--<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>-->
 
+        <!--Galleria-->
         <carousel class="carousel">
           <slide >
             <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}.png" alt="First image of {{selectedSpaceship.imgUrl}}">
@@ -25,6 +25,33 @@
             <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}_1.jpg" alt="Third image of {{selectedSpaceship.imgUrl}}">
           </slide>
         </carousel>
+
+        <!--Buttons-->
+        <div class="row">
+
+          <!--Buy Now Button-->
+          <div
+            class="button starsFull col-lg-6 col-md-6 col-sm-12 col-x-sm-12">
+            <a href="https://venmo.com/Isto-Barton" target="_blank">
+              <h1
+                class="button-text spaceship-title">
+                buy now
+              </h1>
+            </a>
+          </div>
+
+          <!--Back Button-->
+          <div
+            class="button starsFull col-lg-6 col-md-6 col-sm-12 col-x-sm-12">
+            <a routerLink="/dashboard" routerLinkActive="active">
+              <h1
+                class="button-text spaceship-title">
+                back
+              </h1>
+            </a>
+          </div>
+
+        </div>
 
       </div>
 

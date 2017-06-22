@@ -26,6 +26,10 @@ ul {
   width: auto;
 }
 
+.spaceship-listing:hover {
+  border-color: #900000;
+}
+
 .spaceship-title {
   padding:  0px 20px 0px 20px;
   color: #d4b22f;

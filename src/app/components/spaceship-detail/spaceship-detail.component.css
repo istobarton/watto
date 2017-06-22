@@ -1,3 +1,15 @@
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .image-panel {
   text-align: center;
   margin: 50px 0px 50px 0px;
@@ -25,3 +37,21 @@
   height: 300px;
   max-height: 300px;
 }
+
+.button {
+  background-color: transparent;
+  border: 5px solid #d4b22f;
+  border-radius: 5px;
+}
+
+.button:hover {
+  border-color: #900000;
+}
+
+.button-text {
+  color: #d4b22f;
+  text-align: center;
+  vertical-align: middle;
+  margin: 20px 0px 20px 0px;
+}
+
