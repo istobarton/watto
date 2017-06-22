@@ -21,7 +21,6 @@ ul {
   background-color: transparent;
   border: 5px solid #d4b22f;
   border-radius: 5px;
-  /*padding: 25px 25px 25px 25px;*/
   height: 250px;
   width: auto;
 }
@@ -37,6 +36,4 @@ ul {
   text-align: right;
 }
 
-.spaceship-anchor {
-  /*width: 100%;*/
-}
+

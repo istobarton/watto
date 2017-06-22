@@ -10,6 +10,7 @@ import 'rxjs/add/observable/fromPromise';
 @Injectable()
 export class SpaceshipService {
 
+  public spaceshipsLoaded = false;
   public spaceshipUrl = 'spaceships';
   public selectedSpaceship = Spaceship;
 
@@ -28,7 +29,14 @@ export class SpaceshipService {
     for (const index in spaceships){
       spaceships[index]['imgUrl'] = spaceships[index].name.toLowerCase().replace(/ /g, '-');
     }
+
+    this.boolTrue();
+
     return spaceships
+  }
+
+  public boolTrue() {
+    this.spaceshipsLoaded = true;
   }
 
   public getSelectedShip() {

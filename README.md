@@ -57,18 +57,20 @@ Styling Notes:
 * Detail View
   * ~~Replace current galleria with bootstrap and remove dependency?~~
   * ~~1/2 and 1/2 display~~
-  * make sure returning is easy - add back button
-  * "Buy Button"
+  * ~~make sure returning is easy - add back button~~
+  * ~~"Buy Button"~~
 
 ## Bugs
 * Improve Promise Testing
-* Font Awesome NOt Working?
 
 ## Nice to Have
 * ID's for routing
 * Redux for State
 * ImgUrl from Server
 * Deployment
+* Image Rendering
+* Google Image Search Display
+* scss vs css
 
 
 

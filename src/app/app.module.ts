@@ -9,6 +9,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SpaceshipDetailComponent } from './components/spaceship-detail/spaceship-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { DataGuard } from './services/data-guard.service';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
       provide: RequestOptions,
       useClass: CustomRequestOptions
     },
-    SpaceshipService
+    SpaceshipService,
+    DataGuard
   ],
   bootstrap: [AppComponent]
 })
