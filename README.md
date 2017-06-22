@@ -29,48 +29,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 ## To Do
-TODO for MVP: 
-* ~~Infrastructure with Hello World Setup~~
-* ~~Build Spaceship Service~~
-* ~~Adjust Base URL~~
-* ~~Replace Hello World with API Call~~
-* ~~Set selected starship on click~~
-* ~~Develop routing shifting~~
-* ~~ngFor list-view spaceships~~
-* Fix tests with routing https://github.com/angular/angular/issues/11633
-* ~~determine images for list-view (google images? alt source?)~~
-* ~~determine images, information for detail-view~~
-* ~~Image rendering -- subscribe?~~
-* ~~Style - in progress~~
-* Check reqs
 * Update README
+* Documentation
+* Test on different machine
 
-Styling Notes: 
-* List View
-  * ~~Dynamic sizing adjustments~~
-  * ~~Listing styling~~
-  * ~~Simple, don't overthink it~~
-  * ~~header throughout -- resizable~~
-  * ~~Font for header~~
-  * ~~Styling for title~~
-  * ~~Anchor underline~~
-* Detail View
-  * ~~Replace current galleria with bootstrap and remove dependency?~~
-  * ~~1/2 and 1/2 display~~
-  * ~~make sure returning is easy - add back button~~
-  * ~~"Buy Button"~~
-
-## Bugs
-* Improve Promise Testing
+## Known Bugs
+* Testing broken by routing
 
 ## Nice to Have
-* ID's for routing
+* ID's for routing per spaceship ('spaceship/')
+* Routing pre-rendering (for image delays)
 * Redux for State
 * ImgUrl from Server
 * Deployment
-* Image Rendering
-* Google Image Search Display
-* scss vs css
+* Google Image Search Display in lieu of images
+* scss replaces css
+* e2e testing
 
 
 
