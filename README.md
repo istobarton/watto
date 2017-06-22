@@ -1,14 +1,14 @@
 # Watto
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## To Run/Develop Locally
+In terminal:
+1. `git clone https://github.com/istobarton/watto.git`
+2. `cd watto` 
+3. `npm install`
+4.  One of the following
+  * `npm start` to serve the project locally
+  * `npm run hmr` to develop with hmr: [hot module redeploy](https://medium.com/@beeman/tutorial-enable-hmr-in-angular-cli-apps-1b0d13b80130)
+5. Visit `http://localhost:4200/` in your browser.
 
 ## Build
 
@@ -23,10 +23,16 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
-## Further help
+# About this project
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Creation
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
+## Development
+
+## Philosophy
+
+# Future Development
 
 ## To Do
 * Update README
