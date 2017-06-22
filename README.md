@@ -1,4 +1,5 @@
 # Watto
+Deployed at: https://istobarton-watto.netlify.com
 
 ## To Run/Develop Locally
 In terminal:
@@ -47,7 +48,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Routing pre-rendering (for image delays)
 * Redux for State
 * ImgUrl from Server
-* Deployment
 * Google Image Search Display in lieu of images
 * scss replaces css
 * e2e testing
