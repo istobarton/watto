@@ -7,9 +7,11 @@
 
   <div
     class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10">
-    <ul>
+    <ul
+      class="row">
       <li
         *ngFor="let spaceship of spaceships"
+        class="col-x-sm-12 col-sm-12 col-m-6 col-lg-6"
       >
 
           <a
@@ -20,13 +22,13 @@
           >
             <div class="spaceship-listing row">
               <img
-                class="col-lg-2 col-sm-12"
+                class="spaceship-img"
                 *ngIf="spaceship.imgUrl"
-                src="/assets/images/spaceships/thumbs/{{spaceship?.imgUrl}}_thumb.jpg">
-              <h1
-                class="spaceship-title col-lg-10 col-sm-12">
+                src="/assets/images/spaceships/thumbs2/{{spaceship?.imgUrl}}.png">
+              <h2
+                class="spaceship-title starsFull">
                 {{spaceship?.name}}
-              </h1>
+              </h2>
             </div>
           </a>
 

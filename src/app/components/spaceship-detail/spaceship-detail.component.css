@@ -1,0 +1,27 @@
+.image-panel {
+  text-align: center;
+  margin: 50px 0px 50px 0px;
+}
+
+.information-panel {
+  font-size: 2em;
+  color: #d4b22f;
+}
+
+.space-field {
+  font-weight: bolder;
+}
+
+.spaceship-title {
+  font-family: starWarsFull;
+}
+
+.space-info {
+  font-weight: 200;
+}
+
+.carousel-image {
+  width: auto;
+  height: 300px;
+  max-height: 300px;
+}

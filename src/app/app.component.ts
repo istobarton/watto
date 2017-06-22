@@ -10,7 +10,5 @@ import { Spaceship } from './models/spaceship';
 
 export class AppComponent {
 
-  public name = 'Watto';
-
   constructor() { }
 }

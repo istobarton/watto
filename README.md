@@ -41,22 +41,23 @@ TODO for MVP:
 * ~~determine images for list-view (google images? alt source?)~~
 * ~~determine images, information for detail-view~~
 * ~~Image rendering -- subscribe?~~
-* Style - in progress
+* ~~Style - in progress~~
 * Check reqs
 * Update README
 
 Styling Notes: 
 * List View
-  * Dynamic sizing adjustments
-  * Listing styling
-  * Simple, don't overthink it
-  * header throughout -- resizable
-  * Font for header
-  * Styling for title
+  * ~~Dynamic sizing adjustments~~
+  * ~~Listing styling~~
+  * ~~Simple, don't overthink it~~
+  * ~~header throughout -- resizable~~
+  * ~~Font for header~~
+  * ~~Styling for title~~
+  * ~~Anchor underline~~
 * Detail View
-  * Replace current galleria with bootstrap and remove dependency?
-  * 1/2 and 1/2 display
-  * make sure returning is easy
+  * ~~Replace current galleria with bootstrap and remove dependency?~~
+  * ~~1/2 and 1/2 display~~
+  * make sure returning is easy - add back button
   * "Buy Button"
 
 ## Bugs
@@ -67,7 +68,7 @@ Styling Notes:
 * ID's for routing
 * Redux for State
 * ImgUrl from Server
-* Deploy
+* Deployment
 
 
 

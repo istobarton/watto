@@ -1,21 +1,107 @@
-<div>
-  Selected Spaceship: <span>{{selectedSpaceship?.name}}</span>
-  <div>
-    <div>Manufacturer: {{selectedSpaceship?.manufacturer}}</div>
-    <div>Class: {{selectedSpaceship?.class}}</div>
-    <div>Length: {{selectedSpaceship?.techspecs?.length}}</div>
-    <div>Max Acceleration: {{selectedSpaceship?.techspecs?.maxaccel}}</div>
-    <div>MGLT: {{selectedSpaceship?.techspecs?.MGLT}}</div>
-    <div>Max Atmos Speed: {{selectedSpaceship?.techspecs?.maxatmosphericspeeded}}</div>
-    <div>Hull: {{selectedSpaceship?.techspecs?.hull}}</div>
-    <div>Sensor: {{selectedSpaceship?.techspecs?.sensor}}</div>
-    <div>Targeting: {{selectedSpaceship?.techspecs?.targeting}}</div>
-    <div>Armament: {{selectedSpaceship?.techspecs?.armament}}</div>
-    <div>Communications: {{selectedSpaceship?.techspecs?.communications}}</div>
+
+<div class="row">
+
+  <div class="col-lg-6 col-m-6 col-s-12 col-xs-12">
+
+    <div class="row">
+
+      <!--Filler Div-->
+      <div
+        class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+      </div>
+
+      <!--Galleria-->
+      <div class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10 card image-panel">
+        <!--<ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>-->
+
+        <carousel class="carousel">
+          <slide >
+            <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}.png" alt="First image of {{selectedSpaceship.imgUrl}}">
+          </slide>
+          <slide>
+            <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}.jpg" alt="Second image of {{selectedSpaceship.imgUrl}}">
+          </slide>
+          <slide>
+            <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}_1.jpg" alt="Third image of {{selectedSpaceship.imgUrl}}">
+          </slide>
+        </carousel>
+
+      </div>
+
+      <!--Filler Div-->
+      <div
+        class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+      </div>
+
+    </div>
   </div>
-</div>
-<div class="ui-g-12 ui-lg-6">
-  <div class="card">
-    <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+
+  <div class="col-lg-6 col-m-6 col-s-12 col-xs-12 information-panel">
+
+    <div class="row">
+
+      <!--Filler Div-->
+      <div
+        class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+      </div>
+
+        <!--Spaceship Information-->
+        <div class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10">
+          <h1 class="spaceship-title">{{selectedSpaceship?.name}}</h1>
+          <div *ngIf="selectedSpaceship?.manufacturer">
+            <span class="space-field">Manufacturer:</span>
+            <span class="space-info">{{selectedSpaceship?.manufacturer}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.class">
+            <span class="space-field">Class:</span>
+            <span class="space-info">{{selectedSpaceship?.class}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.length">
+            <span class="space-field">Length:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.length}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.maxaccel">
+            <span class="space-field">Max Acceleration:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.maxaccel}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.MGLT">
+            <span class="space-field">MGLT:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.MGLT}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.maxatmosphericspeed">
+            <span class="space-field">Max Atmospheric Speed:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.maxatmosphericspeed}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.hull">
+            <span class="space-field">Hull:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.hull}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.sensor">
+            <span class="space-field">Sensor:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.sensor}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.targeting">
+            <span class="space-field">Targeting:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.targeting}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.armament">
+            <span class="space-field">Armament:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.armament}}</span>
+          </div>
+          <div *ngIf="selectedSpaceship?.techspecs?.communications">
+            <span class="space-field">Communications:</span>
+            <span class="space-info">{{selectedSpaceship?.techspecs?.communications}}</span>
+          </div>
+
+        </div>
+
+      <!--Filler Div-->
+      <div
+        class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
+      </div>
+
+    </div>
+
   </div>
+
 </div>

@@ -1,21 +1,45 @@
-/*@font-face {*/
-  /*font-family: starWarsHollow;*/
-  /*src: url('../assets/fonts/star_jedi/starjedi/Starjedi.ttf') format('truetype');*/
-/*}*/
-
-/*body {*/
-  /*background-color: grey;*/
-/*}*/
-
-/*h1 {*/
-  /*color: #d4b22f;*/
-  /*font-family: starWarsHollow;*/
-/*}*/
-
-* {
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: starWarsHollow;
+  src: url('../assets/fonts/star_jedi/Starjhol.ttf') format('truetype');
 }
+@font-face {
+  font-family: starWarsFull;
+  src: url('../assets/fonts/star_jedi/STJEDISE.ttf') format('truetype');
+}
+
+.nav-title {
+  font-size: 60px;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.starsHollow {
+  color: #d4b22f;
+  font-family: starWarsHollow;
+}
+
+.starsFull {
+  color: #d4b22f;
+  font-family: starWarsFull;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+navbar {
+  height: 50px;
+  padding-bottom: 50px;
+}
+
 header {
   background-color:rgba(33, 33, 33, 0.9);
   color:#ffffff;

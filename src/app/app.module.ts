@@ -8,7 +8,8 @@ import { CustomRequestOptions } from './options/custom-request.options';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SpaceshipDetailComponent } from './components/spaceship-detail/spaceship-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NgxGalleryModule } from 'ngx-gallery';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+
 
 @NgModule({
   declarations: [
@@ -17,10 +18,10 @@ import { NgxGalleryModule } from 'ngx-gallery';
     SpaceshipDetailComponent
   ],
   imports: [
-    NgxGalleryModule,
     BrowserModule,
     HttpModule,
     AppRoutingModule,
+    CarouselModule.forRoot()
   ],
   providers: [
     {
