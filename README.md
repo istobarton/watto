@@ -37,10 +37,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## To Do
 * Update README
 * Documentation
-* Test on different machine
 
 ## Known Bugs
 * Testing broken by routing
+* Occassional rendering lag on router redirects/initial load - preloading would fix
 
 ## Nice to Have
 * ID's for routing per spaceship ('spaceship/')
