@@ -1,3 +1,5 @@
+//Spaceship based on mockable.io.
+
 export class Spaceship {
   imgUrl: string;
   name: string;

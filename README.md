@@ -39,21 +39,17 @@ My project is also deployed here: https://istobarton-watto.netlify.com
 
 # Future Development
 
-## To Do
-* Update README
-* Documentation
-
 ## Known Bugs
-* e2e broken by routing
 * Long load time in deployed environment - sprites?
 * Better dynamic sizing for mobile devices w/ images
+* e2e broken by routing
 
 ## Nice to Have
 * Redux for State
 * ID's for routing per spaceship ('spaceship/t-65-x-wing-starfighter')
 * Routing pre-rendering (for image delays)
 * ImgUrl from Server
-* Google Image Search Display in lieu of images
+* Google Image Search Display in lieu of images?
 * scss replaces css
 * unit testing
 

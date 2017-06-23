@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { DataGuardService } from './data-guard.service';
+import { DataGuard } from './data-guard.service';
 
-describe('DataGuardService', () => {
+describe('DataGuard', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [DataGuardService]
+      providers: [DataGuard]
     });
   });
 
-  it('should be created', inject([DataGuardService], (service: DataGuardService) => {
+  it('should be created', inject([DataGuard], (service: DataGuard) => {
     expect(service).toBeTruthy();
   }));
 });

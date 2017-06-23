@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: '/dashboard',
-    pathMatch: 'full'
+    pathMatch: 'full' //redirects base URL to /dashboards
   },
   {
     path: 'dashboard',
@@ -18,11 +18,11 @@ const routes: Routes = [
   {
     path: 'spaceship',
     component: SpaceshipDetailComponent,
-    canActivate: [ DataGuard ]
+    canActivate: [ DataGuard ] //Works with DataGuard Service to prevent travel without selected Spaceship
   },
   {
     path: '**',
-    redirectTo: '/dashboard',
+    redirectTo: '/dashboard', //Redirects any faulty endpoint to dashboard -- Does not work in deployment
   }
 
 ];

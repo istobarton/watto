@@ -14,9 +14,8 @@ export class SpaceshipDetailComponent implements OnInit {
     private spaceshipService: SpaceshipService
   ) { }
 
+  //get selected spaceship onInit for images
   ngOnInit(): void {
-
     this.selectedSpaceship = this.spaceshipService.getSelectedShip();
-
   }
 }

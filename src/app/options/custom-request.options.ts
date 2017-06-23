@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BaseRequestOptions, RequestOptions, RequestOptionsArgs } from '@angular/http';
 
+//Allows for adjustment of baseURL. Defaults to localhost:4200
 @Injectable()
 export class CustomRequestOptions extends BaseRequestOptions {
   merge(options?: RequestOptionsArgs): RequestOptions {

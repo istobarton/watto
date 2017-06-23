@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { SpaceshipService } from './services/spaceship.service';
-import { Spaceship } from './models/spaceship';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',

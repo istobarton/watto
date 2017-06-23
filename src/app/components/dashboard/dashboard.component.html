@@ -1,19 +1,23 @@
 <div
   class="row">
 
+  <!--Filler Div-->
   <div
     class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
   </div>
 
   <div
     class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10">
+    <!--Spaceship List-->
     <ul
       class="row">
+
+      <!--Iterate over returned spaceships and create list items out of each-->
       <li
         *ngFor="let spaceship of spaceships"
         class="col-x-sm-12 col-sm-12 col-m-6 col-lg-6"
       >
-
+          <!--Redirect to spaceshipDetailComponent-->
           <a
             class="spaceship-anchor "
             routerLink="/spaceship"
@@ -21,22 +25,29 @@
             (click)="selectSpaceship(spaceship)"
           >
             <div class="spaceship-listing row">
+
+              <!--Spaceship Image-->
               <img
                 class="spaceship-img"
                 *ngIf="spaceship.imgUrl"
                 src="/assets/images/spaceships/thumbs/{{spaceship?.imgUrl}}.png">
+
+              <!--Spaceship Title-->
               <h2
                 class="spaceship-title starsFull">
                 {{spaceship?.name}}
               </h2>
+
             </div>
           </a>
 
       </li>
+
     </ul>
+
   </div>
 
-
+  <!--Filler Div-->
   <div
     class="col-lg-1 col-md-1 col-sm-1 col-x-sm-1 filler-div">
   </div>

@@ -1,15 +1,21 @@
+/*Native*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule, RequestOptions } from '@angular/http';
 
+/*Components*/
 import { AppComponent } from './app.component';
-import { SpaceshipService } from './services/spaceship.service';
-import { CustomRequestOptions } from './options/custom-request.options';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SpaceshipDetailComponent } from './components/spaceship-detail/spaceship-detail.component';
+
+/*Services, Options, Routing*/
 import { AppRoutingModule } from './app-routing.module';
-import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { CustomRequestOptions } from './options/custom-request.options';
+import { SpaceshipService } from './services/spaceship.service';
 import { DataGuard } from './services/data-guard.service';
+
+/*External*/
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 
 @NgModule({
