@@ -1,4 +1,4 @@
-import { NgModule }             from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -18,7 +18,7 @@ const routes: Routes = [
   {
     path: 'spaceship',
     component: SpaceshipDetailComponent,
-    canActivate: [DataGuard]
+    canActivate: [ DataGuard ]
   },
   {
     path: '**',
@@ -31,5 +31,6 @@ const routes: Routes = [
   imports: [ RouterModule.forRoot(routes) ],
   exports: [ RouterModule ]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}
 

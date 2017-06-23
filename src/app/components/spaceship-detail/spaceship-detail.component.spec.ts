@@ -10,7 +10,7 @@ describe('SpaceshipDetailComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ SpaceshipDetailComponent ]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -24,8 +24,8 @@ describe('SpaceshipDetailComponent', () => {
   });
 
   it(`should have a selectedSpaceship property`, async(() => {
-    const fixture = TestBed.createComponent(SpaceshipDetailComponent);
-    const comp = fixture.debugElement.componentInstance;
+    const fixt = TestBed.createComponent(SpaceshipDetailComponent);
+    const comp = fixt.debugElement.componentInstance;
     expect(comp.selectedSpaceship).toEqual(undefined);
   }));
 });

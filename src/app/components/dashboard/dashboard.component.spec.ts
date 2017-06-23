@@ -24,15 +24,15 @@ describe('DashboardComponent', () => {
   });
 
   it(`should hold a list of spaceships`, async(() => {
-    const fixture = TestBed.createComponent(DashboardComponent);
-    const app = fixture.debugElement.componentInstance;
+    const fixt = TestBed.createComponent(DashboardComponent);
+    const app = fixt.debugElement.componentInstance;
     expect(app.spaceships).toBeTruthy();
   }));
 
   it('should render a list regardless of promise', async(() => {
-    const fixture = TestBed.createComponent(DashboardComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
+    const fixt = TestBed.createComponent(DashboardComponent);
+    fixt.detectChanges();
+    const compiled = fixt.debugElement.nativeElement;
     expect(compiled.querySelector('ul')).toBeTruthy();
   }));
 

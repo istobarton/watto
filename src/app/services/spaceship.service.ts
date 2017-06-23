@@ -1,9 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Spaceship } from '../models/spaceship';
-import { Http, RequestOptions, Headers } from '@angular/http';
+import { Http } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
-import { Observable } from "rxjs/Observable";
 import 'rxjs/add/observable/fromPromise';
 
 
@@ -14,7 +13,8 @@ export class SpaceshipService {
   public spaceshipUrl = 'spaceships';
   public selectedSpaceship = Spaceship;
 
-  constructor(public http: Http) { }
+  constructor(public http: Http) {
+  }
 
   public getSpaceships(): Promise<Spaceship[]> {
     return this.http.get(this.spaceshipUrl)
@@ -26,8 +26,10 @@ export class SpaceshipService {
   }
 
   public createImagePath(spaceships) {
-    for (const index in spaceships){
-      spaceships[index]['imgUrl'] = spaceships[index].name.toLowerCase().replace(/ /g, '-');
+    for (const index in spaceships) {
+      if (spaceships.hasOwnProperty('name')) {
+        spaceships[ index ][ 'imgUrl' ] = spaceships[ index ].name.toLowerCase().replace(/ /g, '-');
+      }
     }
 
     this.boolTrue();

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule, RequestOptions }    from '@angular/http';
+import { HttpModule, RequestOptions } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SpaceshipService } from './services/spaceship.service';

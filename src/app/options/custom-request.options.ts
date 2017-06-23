@@ -3,7 +3,7 @@ import { BaseRequestOptions, RequestOptions, RequestOptionsArgs } from '@angular
 
 @Injectable()
 export class CustomRequestOptions extends BaseRequestOptions {
-  merge(options?:RequestOptionsArgs):RequestOptions {
+  merge(options?: RequestOptionsArgs): RequestOptions {
     options.url = ' https://demo7475333.mockable.io/' + options.url;
     return super.merge(options);
   }

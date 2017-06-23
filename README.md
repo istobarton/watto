@@ -1,5 +1,4 @@
 # Watto
-Deployed at: https://istobarton-watto.netlify.com
 
 ## To Run/Develop Locally
 In terminal:
@@ -11,11 +10,11 @@ In terminal:
   * `npm run hmr` to develop with hmr: [hot module redeploy](https://medium.com/@beeman/tutorial-enable-hmr-in-angular-cli-apps-1b0d13b80130)
 5. Visit `http://localhost:4200/` in your browser.
 
-## Build
+## Linting
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng lint` to run typescript linting checks.
 
-## Running unit tests
+## Running unit tests - BROKEN
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
@@ -41,7 +40,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Known Bugs
 * Testing broken by routing
-* Occassional rendering lag on router redirects/initial load - preloading would fix
+* Long load time in deployed environment - sprites, etc
 
 ## Nice to Have
 * ID's for routing per spaceship ('spaceship/')
