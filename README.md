@@ -12,25 +12,35 @@ In terminal:
 
 ## Linting
 
-Run `ng lint` to run typescript linting checks.
-
-## Running unit tests - BROKEN
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Run `ng lint` to run [typescript linting](https://palantir.github.io/tslint/) checks. Helpful for clean code.
 
 # About this project
 
 ## Creation
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.2.
 
-## Development
+I am familiar with Angular 2 since we recently started using it to develop a new application at our company. I decided 
+utilize and expand my current Angular 2 knowledge with this project. There were several things that the Angular Cli 
+did not have built in right out of the gate that I needed to add: 
+* HMR: Hot Module Redeploy (see link above) for rapid development. This is particularly helpful for Angular 2's interdependencies and for styling development.
+* Routing: Both routing endpoints and restrictions needed to be added. 
+* Common base URL. By default, requests are made to localhost, expecting a full-stack app. This had to be overriden for the spaceships endpoint.
 
-## Philosophy
+## Development Philosophy
+
+There are a lot of things that I wanted to accomplish with this app that I was unsure I would be able to accomplish within the week.
+My general development philosophy is to break things into the smalled (MVP) accomplishments possible and commit as I hack through them.
+Bugs, implementation issues, etc arise as a natural part of the process. Trying to bite off too much makes for sloppy, anxious
+development, and makes it difficult to read a commit history.
+
+>ABC: Always Be Committing
+
+So, you'll see a long commit history for me. Along with that history, you can see this README adjusting with to-do's and notes
+on my development process. I've kept a list of my known bugs and nice-to-haves so that you can get an idea of how I would 
+improve this project as I moved forward. 
+
+My project is also deployed here: https://istobarton-watto.netlify.com
+(Note: You'll see a bug listed below for the image load-time in deployment.)
 
 # Future Development
 
@@ -39,17 +49,18 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * Documentation
 
 ## Known Bugs
-* Testing broken by routing
-* Long load time in deployed environment - sprites, etc
+* e2e broken by routing
+* Long load time in deployed environment - sprites?
+* Better dynamic sizing for mobile devices w/ images
 
 ## Nice to Have
-* ID's for routing per spaceship ('spaceship/')
-* Routing pre-rendering (for image delays)
 * Redux for State
+* ID's for routing per spaceship ('spaceship/t-65-x-wing-starfighter')
+* Routing pre-rendering (for image delays)
 * ImgUrl from Server
 * Google Image Search Display in lieu of images
 * scss replaces css
-* e2e testing
+* unit testing
 
 
 
