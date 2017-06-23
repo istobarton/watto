@@ -27,7 +27,7 @@ export class SpaceshipService {
 
   public createImagePath(spaceships) {
     for (const index in spaceships) {
-      if (spaceships.hasOwnProperty('name')) {
+      if (spaceships[ index ].hasOwnProperty('name')) {
         spaceships[ index ][ 'imgUrl' ] = spaceships[ index ].name.toLowerCase().replace(/ /g, '-');
       }
     }

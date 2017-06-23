@@ -14,9 +14,11 @@
       <div class="col-lg-10 col-md-10 col-sm-10 col-x-sm-10 card image-panel">
 
         <!--Galleria-->
-        <carousel class="carousel">
+        <carousel
+          *ngIf="selectedSpaceship?.imgUrl"
+          class="carousel">
           <slide >
-            <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}.png" alt="First image of {{selectedSpaceship.imgUrl}}">
+            <img class="carousel-image" src="assets/images/spaceships/thumbs/{{selectedSpaceship.imgUrl}}.png" alt="First image of {{selectedSpaceship.imgUrl}}">
           </slide>
           <slide>
             <img class="carousel-image" src="assets/images/spaceships/{{selectedSpaceship.imgUrl}}/{{selectedSpaceship.imgUrl}}.jpg" alt="Second image of {{selectedSpaceship.imgUrl}}">
